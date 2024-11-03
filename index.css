@@ -1,0 +1,165 @@
+ /* Importing Inter and Montserrat fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@400&display=swap');
+
+ /* Style for the header */
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+     background-color: #f7f7d5; /* Soft baby orange */
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* Flexbox for logo and text */
+ .header-content {
+     display: flex;
+     align-items: center;
+ }
+ 
+ /* Logo */
+ .logo img {
+     max-width: 100px; /* Adjust the size of the logo */
+     height: auto;
+ }
+ 
+ /* Text next to the logo */
+ .logo-text h1 {
+     font-family: 'Inter', sans-serif; /* Set font to Inter */
+     margin-left: 20px;
+     font-size: 24px;
+     color: #333;
+     white-space: nowrap; /* Prevent line break for the whole text */
+     display: flex;
+     align-items: center; /* Align text vertically */
+ }
+ 
+ /* Styling for animated word */
+ #animated-word {
+     background: linear-gradient(to right, #56aba8, #f36c29); /* Teal to Orange */
+     -webkit-background-clip: text;
+     color: transparent;
+     font-weight: bold;
+     animation: typing 5s steps(12, end) infinite, smooth-loop 5s infinite; /* Added smooth-loop */
+     white-space: nowrap; /* Prevent wrapping */
+     display: inline; /* Inline display for seamless text */
+     overflow: hidden;
+     margin-left: 4px; /* Space between "of" and "Biological" */
+ }
+ 
+ /* Typing animation */
+ @keyframes typing {
+     0% {
+         width: 0;
+     }
+     80% {
+         width: 100%;
+     }
+     100% {
+         width: 0; /* Reset width to start again smoothly */
+     }
+ }
+ 
+ /* Smooth loop animation */
+ @keyframes smooth-loop {
+     0%, 80% {
+         opacity: 1; /* Fully visible */
+     }
+     90%, 100% {
+         opacity: 0; /* Fade out before repeating */
+     }
+ }
+ 
+ /* Optional spacing for "Engineering" */
+ .space {
+     margin-left: 8px; /* Adjust this value to control space */
+ }
+ 
+ /* Navigation styles */
+ nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     gap: 30px; /* Increased space between items */
+     align-items: center; /* Aligns items vertically */
+ }
+ 
+ nav ul li {
+     display: inline;
+ }
+ 
+ nav ul li a {
+     font-family: 'Montserrat', sans-serif;
+     text-decoration: none;
+     color: #333;
+     font-size: 20px; /* Increased font size */
+     transition: color 0.3s, text-shadow 0.3s ease-in-out;
+     text-shadow: 0 0 10px rgba(255, 165, 0, 0.7); /* Bright orange shine */
+ }
+ 
+ nav ul li a:hover, nav ul li a:focus {
+     color: #007BFF; /* Blue color on hover */
+     text-shadow: 0 0 10px rgba(0, 123, 255, 0.7); /* Glowing effect */
+ }
+ 
+ /* Style for the Join Us button */
+ .join-button {
+     display: inline-block; /* To apply padding and margin properly */
+     padding: 10px 20px; /* Add padding for button size */
+     margin-left: 10px; /* Space between the button and the previous link */
+     background-color: #0e2feb; /* Orange background */
+     color: white; /* Text color */
+     text-decoration: none; /* Remove underline */
+     font-family: 'Inter', sans-serif; /* Set font to Inter */
+     font-size: 18px; /* Font size for button */
+     border-radius: 5px; /* Slightly rounded corners */
+     transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+ }
+ 
+ /* Gleam effect on hover */
+ .join-button:hover {
+     background-color: #e55a1d; /* Darker orange on hover */
+     box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Blue glow effect */
+ }
+ 
+ /* Background color for the body */
+ body {
+    height: 2000px;
+     background-color: #b9d1e2; /* Soft baby blue */
+     font-family: 'Inter', sans-serif, 'Segoe UI Emoji'; /* Added Segoe UI Emoji for emoji support */
+ }
+ 
+ /* Welcome message styles */
+ .welcome-message {
+    text-align: center; /* Center the text */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-size: 36px; /* Font size */
+    color: #333; /* Text color */
+    margin: 50px 0; /* Margin around the text */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the content horizontally */
+    align-items: baseline; /* Align the items at their baseline */
+ }
+ 
+ /* Animation for the changing words */
+ @keyframes fade {
+     0%, 20% {
+         opacity: 1; /* Fully visible */
+     }
+     30%, 70% {
+         opacity: 0; /* Fade out */
+     }
+     80%, 100% {
+         opacity: 1; /* Fade back in */
+     }
+ }
+ 
+#changing-word {
+    background: linear-gradient(to right, #56aba8, #f36c29); /* Gradient from teal to orange */
+    -webkit-background-clip: text; /* Clip the background to text */
+    color: transparent; /* Make the text color transparent to show the gradient */
+    font-weight: bold; /* Optional: make the text bold */
+    display: inline-block; /* Ensure it's inline for seamless text */
+    line-height: 1.2; /* Adjust for vertical alignment */
+}
