@@ -3,13 +3,13 @@
 
  /* Style for the header */
  header {
+     width: 100%;
      display: flex;
      justify-content: space-between;
      align-items: center;
      padding: 20px;
      background-color: #f7f7d5; /* Soft baby orange */
      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-     width: 100%;
      padding: 10px 0;
  }
  
@@ -21,7 +21,7 @@
  
  /* Logo */
  .logo img {
-    width: 100%;
+     width: 100%;
      max-width: 100px; /* Adjust the size of the logo */
      height: auto;
  }
